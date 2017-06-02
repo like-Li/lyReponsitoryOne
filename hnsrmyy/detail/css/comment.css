@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font:13px "microsoft yahei",Arial,Helvetica,sans-serif;
+    color:#666;
+}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+img{
+    vertical-align:middle;
+}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+a{
+    color:#666;
+    text-decoration:none;
+    transition: all .28s linear;
+}
+a:hover{
+    color:#FF0700;
+    text-decoration:none;
+}
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.relative{
+    position: relative;
+}
+div.auto{
+    width: 100%;
+    margin: 0 auto;
+}

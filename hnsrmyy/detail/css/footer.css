@@ -1,0 +1,167 @@
+/*                底部          */
+div.foot{
+
+}
+#footer{
+    margin:40px auto;
+}
+div.footer-service{
+    height: 270px;
+    background: #F1F1F1;
+    padding: 65px 0;
+}
+div.service-a{
+    width: 1100px;
+    height: 125px;
+    margin: 0 auto;
+
+}
+div.service-a>dl{
+    float: left;
+    margin-right: 40px;
+}
+div.service-a>dl span{
+    margin-left: 10px;
+}
+div.service-a>dl em{
+    font-style: normal;
+    display: block;
+    font-size: 16px;
+    color: #000;
+    padding-bottom: 5px;
+}
+div.service-a>dl b{
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    color: #6BCBCA;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+div.service-a>dl>dd{
+    text-indent: 35px;
+    height: 23px;
+    line-height: 23px;
+}
+div.service-a>dl>dd>a{
+    padding-left: 15px;
+    background: url("../images/ico_007.jpg") no-repeat left center;
+}
+/*二维码*/
+div.service-ab{
+    width: 128px;
+    height: 165px;
+    text-align: center;
+}
+div.service-ab>span{
+    display: block;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #FE7849;
+}
+div.service-ab>a{
+    display: block;
+    width: 95px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #CACACA;
+    color: #FFFFFF;
+    border-radius: 5px;
+    margin: 0 18px;
+}
+div.service-ab>a:hover{
+    background: #FF7544;
+}
+div.footerNews{
+    width: 270px;
+    height: 165px;
+}
+.newTitle b{
+    font-weight: normal;
+    display: block;
+    width: 100%;
+}
+div.footerNews{
+    padding-left: 40px;
+    margin-left: 50px;
+    border-left: 1px solid #dddddd;
+}
+div.newTitle{
+    width: 200px;
+    height: 45px;
+}
+div.titleSel{
+    width: 205px;
+    height: 35px;
+    margin: 15px 0;
+}
+div.titleSel select{
+    width: 99px;
+    height: 32px;
+    color: #85796A;
+    border-color: #dddddd;
+    border-radius: 4px;
+    -webkit-appearance:none;
+    padding-left: 5px;
+    outline: none;
+    background: #ffffff  url("../images/ico_005.png") no-repeat 90% center;
+}
+div.titleSel .selTime{
+    margin-left: 5px;
+}
+input.newsBtn{
+    width: 95px;
+    height: 32px;
+    line-height: 32px;
+    background: #6BCBCA;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+div.footer-title{
+    width: 283px;
+    height: 40px;
+    margin: 30px auto;
+}
+div.footer-title>p>a{
+    width: 130px;
+    height: 30px;
+    padding: 8px 20px 8px 40px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+div.footer-title>p>a.weibo{
+    background:#CACACA url("../images/ico_011.png") no-repeat 8% center;
+}
+div.footer-title>p>a.tencent{
+    margin-left: 10px;
+    background: #A3C638 url(../images/ico_012.png) no-repeat 8% center;
+}
+div.footerTitleInfo{
+    width: 800px;
+    height: 45px;
+    line-height: 20px;
+
+    text-align: center;
+    margin: 10px auto;
+}
+#tittleLast{
+    width: 216px;
+    height: 25px;
+    color: #757575;
+    font-size: 12px;
+    padding-left: 5px;
+    border: 2px solid #dddddd;
+    -webkit-appearance:none;
+    display: block;
+    margin: 0 auto;
+    background: url("../images/ico_013.jpg") no-repeat 95% center;
+}
+#footer>p{
+    width: 800px;
+    height: 20px;
+    text-align: center;
+    margin: 10px auto;
+}

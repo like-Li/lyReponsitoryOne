@@ -1,0 +1,236 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font:13px "microsoft yahei",Arial,Helvetica,sans-serif;
+    color:#666;
+}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+img{
+    vertical-align:middle;
+}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+a{
+    color:#666;
+    text-decoration:none;
+    transition: all .28s linear;
+}
+a:hover{
+    color:#FF0700;
+    text-decoration:underline;
+}
+#top,#section,div.bread,#footer{
+    width:1200px;
+    margin:0 auto;
+}
+
+/*主题内容*/
+#section{
+    display: flex;
+    flex-flow: row wrap;
+}
+div.bread{
+    margin: 20px 0;
+}
+div.bread>b{
+    font-weight: normal;
+    margin-right: 5px;
+    background: url("");
+}
+#sectionLeft{
+    width: 240px;
+
+}
+/*        健康管理        */
+div.title{
+    font-size: 18px;
+    color: #fff;
+    height: 60px;
+    line-height: 60px;
+    background: #6BCBCA url(../images/about_ico05.png) no-repeat 12px center;
+    padding-left: 60px;
+}
+div.newsmenu{
+    padding-top: 10px;
+}
+div.newsmenu>ul{
+    background: #F3F3F3;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+div.newsmenu>ul>li a{
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    padding-left: 35px;
+    background:url(../images/ico_004.png) no-repeat 15px center;
+    transition: all .3s linear;
+}
+div.newsmenu>ul>li+li{
+    border-top: 1px solid #ECECEC;
+}
+div.newsmenu>ul>li:hover{
+    background: #FF7544;
+}
+div.newsmenu>ul>li:hover a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-left: 45px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15) ;
+}
+/*tools工具*/
+div.tools{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 10px;
+}
+div.tools>a{
+    width: 117px;
+    height: 117px;
+    text-align: center;
+    background: #F1F1F1;
+    margin: 0 3px 3px 0;
+    text-decoration: none;
+    color: #505050;
+}
+div.tools>a:hover img{
+    animation: tada 1s;
+}
+div.tools>a>img{
+    margin-top: 25px;
+}
+div.tools>a>em{
+    display: block;
+    font-style: normal;
+    font-size: 12px;
+    margin-top: 10px;
+}
+ul.leftTitle{
+    margin-top: 50px;
+    padding-left: 50px;
+}
+ul.leftTitle>li{
+    font-size: 12px;
+    height: 25px;
+}
+/*          右侧          */
+#sectionRight{
+    width: 930px;
+    margin-left: 25px;
+}
+#sectionRight>h1{
+    font-size: 30px;
+    font-weight: normal;
+    color: #ADADAD;
+    border-bottom: 1px solid #E7E6E6;
+    padding: 10px 0;
+}
+/*   快速选择科室     */
+div.sectionRightTop{
+    text-align: center;
+    margin: 40px 0;
+}
+.sectionRightTop>h1{
+    color: #6BCBCA;
+    font-size: 25px;
+    font-weight: normal;
+}
+.sectionRightTop>p{
+    margin: 15px 0 40px 0;
+}
+#form01>select{
+    width: 280px;
+    height: 50px;
+    -webkit-appearance: none;
+    border: 2px solid #dddddd;
+    padding: 15px 20px;
+    background: url("../images/ico_005.jpg") no-repeat 92% center;
+}
+#form01>input{
+    width: 110px;
+    height: 48px;
+    background: #6BCBCA;
+    border: 0;
+    color: #FFFFFF;
+}
+/*    section-right-bottom       */
+.botTop{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.botTop>h2{
+    font-weight: normal;
+    line-height: 15px;
+    border-bottom: 5px solid #6BCBCA;
+}
+.botTop>a{
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #6BCBCA;
+}
+/*图片排列*/
+.sectionRightBot{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800px;
+}
+.botOne>ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.botOne li{
+    width: 217px;
+    height: 250px;
+    line-height: 55px;
+    text-align: center;
+    background: #F4F4F4;
+    margin: 10px 7px;
+    padding: 15px;
+    transition: all .28s linear;
+}
+.botOne li:hover{
+    box-shadow: 0 5px 15px 5px rgba(128 ,128 ,128 ,0.25);
+    background: #fff;
+}
+.botOne>ul p{
+    margin: 15px 0;
+    font-size: 12px;
+    line-height: 25px;
+}
+.botOne>ul h2{
+    font-weight: normal;
+    color: #BDA179;
+}
+div.botBtn>a{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    margin-left: 5px;
+}
+div.botBtn>a:first-child{
+    background: #BDA179;
+}
+div.botBtn>a:last-child{
+    background: #6BCBCA;
+}
+
+
+
