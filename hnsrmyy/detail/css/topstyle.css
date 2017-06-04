@@ -1,6 +1,6 @@
 
 /*       section-right       */
-/*    ÎÄÕÂ    */
+/*    ï¿½ï¿½ï¿½ï¿½    */
 .newsList>ul{
     display: flex;
     flex-direction: column;
@@ -52,7 +52,7 @@
 .newsListBtn>a{
     color: #fff;
 }
-/*   È«²¿Äê·Ý   */
+/*   È«ï¿½ï¿½ï¿½ï¿½ï¿½   */
 .topTitleYear{
     background: url("../images/ico_005.jpg") no-repeat 85% center;
     z-index: 99;
@@ -118,4 +118,33 @@ div.topTitle{
     margin: 20px 0;
     border: 1px solid #E7E6E6;
 }
+/*      å°±è¯Šæµç¨‹        */
+#sectionRight .titleLi{
+    padding: 30px 20px;
+    border-bottom: 1px solid #ddd;
+}
+.titleLi>li{
+    padding: 15px 0;
+}
 
+/*      jianjie     */
+.jianjie{
+    color: #53D4CD;
+}
+.titleText{
+    width: 900px;
+    padding: 30px 40px;
+}
+.titleText>h2{
+    padding-bottom: 20px;
+    font-size: 2em;
+}
+.titleText>p{
+     line-height: 1.5em;
+    font-size: 1.5em;
+    font-family: 'simSong';
+ }
+/*      ç§‘å­¦ç ”ç©¶        */
+.titleLi>li>span{
+    margin-right: 15px;
+}

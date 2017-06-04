@@ -39,7 +39,7 @@
         $fontfile = "../font/SIMHEI.ttf";
         //数据字典(去掉容易混淆的字母和数字)
         $data = "abcdefhjkmnpqrstuvwxyABCDEFGHJKLMNPQRSTUVWXY2345678";
-        //生成混合内容    
+        //生成混合内容
         /*substr（字符串，开始位置，截取长度）   截取字符串
         strlen(string)  计算字符串的长度*/
         $fontcontent = substr($data, rand(0,strlen($data)-1),1);

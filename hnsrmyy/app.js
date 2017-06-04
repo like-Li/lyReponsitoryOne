@@ -8,12 +8,10 @@ const pool = require('./pool');
 var app = express();
 http.createServer(app).listen(8081);
 
-// ÖĞ¼ä¼ş·µ»Ø¾²Ì¬×ÊÔ´
+// ä¸­é—´ä»¶è¿”å›é™æ€èµ„æº
 app.use(express.static('detail'));
 
-// Â·ÓÉ·µ»Ø¶¯Ì¬×ÊÔ´
-app.get('/list',pool.getAll);
-// ¾ÍÕïÖ¸ÄÏ
-app.post('/type',pool.getGuide);
+// è·¯ç”±è¿”å›åŠ¨æ€èµ„æº
+app.get('/list/:type',pool.getAll);
 
 

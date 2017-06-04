@@ -10,37 +10,18 @@ var pool = mysql.createPool({
 });
 
 module.exports = {
-   getAll:(req,res)=>{
-        var type = req.query.id;
-      //  console.log(req)
+    getAll:(req,res)=>{
+        var type = req.params.type;
         pool.getConnection((err,conn)=>{
             if(err) throw err;
-            conn.query('SELECT * FROM a_content  WHERE cid=(SELECT id FROM a_type WHERE id=?)',[type],(err,result)=>{
+            conn.query('SELECT * FROM a_content  WHERE cid=(SELECT id FROM a_type WHERE ?)',[type],(err,result)=>{
                 if(err){
-                    res.json({"code":-1,"msg":"查询失败!！"})
+                    res.json({"code":-1,"msg":"查询失败！"})
                 }else{
                     res.json(result);
                     console.log(result)
                 }
             });
         })
-    } ,
-    getGuide:(req,res)=>{
-        req.on('data',(buf)=>{
-            var t = buf.toString();
-            var obj = qs.parse(t);
-          //  console.log(obj);
-            pool.getConnection((err,conn)=>{
-                if(err) throw err;
-                conn.query('SELECT * FROM a_content  WHERE cid=(SELECT id FROM a_type WHERE id=?)',[obj.type],(err,result)=>{
-                    if(err){
-                        res.json({"code":-1,"msg":"查询失败!！"})
-                    }else{
-                        res.json(result);
-                        console.log(result)
-                    }
-                });
-            })
-        });
     }
 };

@@ -368,15 +368,15 @@
                 </li>
                 <li>
                     <i><img src="images/ico_014.png" alt=""></i>
-                    <a href="topdetail.html">就诊指南</a>
+                    <a href="jiuzhen.html">就诊指南</a>
                 </li>
                 <li>
                     <i><img src="images/ico_014.png" alt=""></i>
-                    <a href="#">医院概况</a>
+                    <a href="jianjie.html">医院概况</a>
                 </li>
                 <li>
                     <i><img src="images/ico_014.png" alt=""></i>
-                    <a href="#">科学研究</a>
+                    <a href="kexue.html">科学研究</a>
                 </li>
                 <li>
                     <i><img src="images/ico_014.png" alt=""></i>
@@ -384,11 +384,11 @@
                 </li>
                 <li>
                     <i><img src="images/ico_014.png" alt=""></i>
-                    <a href="topdetail.html?type=1" id="heath">健康管理</a>
+                    <a href="jiankang.html">健康管理</a>
                 </li>
                 <li>
                     <i><img src="images/ico_014.png" alt=""></i>
-                    <a href="topdetail.html?id=6">新闻动态</a>
+                    <a href="#">新闻动态</a>
                 </li>
                 <li>
                     <i><img src="images/ico_014.png" alt=""></i>
@@ -553,7 +553,7 @@
 
                 <form action="" class="relative lf" style="margin: 0 8px;width: 160px;height: 35px;">
                     <input type="text" name="search-words" class="animation" placeholder="请输入医生名字">
-                    <input class="btn" type="submit" value>
+                    <input class="btn" type="submit">
                 </form>
                 <a href="#" class="mm">更多>></a>
                 <a href="#" class="aLeft"></a>
@@ -649,7 +649,7 @@
                     <div class="data-img ">
                         <img src="images/pic_008.png" width="80" height="80">
                     </div>
-                    <a href="#" title="神经内科" class="aa-office"">神经内科</a>
+                    <a href="#" title="神经内科" class="aa-office">神经内科</a>
                     <p>我科始建于上世纪70年代初，目前为卫生部国家重点专科建设项目单位，河南省重点……</p>
                     <a href="#" title="查看详细" class="btn more">查看详细</a>
                     <a href="#" title="科室专家" class="btn doctor">科室专家</a>
@@ -857,7 +857,7 @@
 </div>
 <!--登录模态框-->
 <div id="login" style="display: none;">
-    <div class="modal">
+    <div class="modal model-login">
         <div class="modal-dialog">
             <div class="content">
                 <h2>输入VIP账号与密码</h2>
@@ -873,7 +873,7 @@
 </div>
 <!--注册模态框-->
 <div id="regist" style="display: none;">
-    <div class="modal">
+    <div class="modal model-register">
         <div class="modal-dialog">
             <div class="registContent">
                 <span class="close">&times;</span>
@@ -945,37 +945,10 @@
 <script src="js/index.js"></script>
 <script src="js/qikan.js"></script>
 <script src="js/moreColor.js"></script>
+<script src="js/register.js"></script>
+<script src="js/login.js"></script>
 <script>
-    // 点击登录事件
-    $('#ubtnL').click(function(){
-        var uname = $('#unameL').val();
-        var upwd = $('#upwdL').val();
-        $.ajax({
-            type:'POST',
-            url:'data/login.php',
-            data:{n:uname,p:upwd},
-            success:function(data){
-               // console.log(data)
-                if(uname==""||upwd==""){
-                    $('#login h2').html('用户名或密码不能为空！').css('color','red');
-                }else if(data>0){
-                    // 提交表单
-                    $('#form1').submit();
-                    $('div.modal').hide();
-                }else{
-                    $('#login h2').html('用户名或密码不正确！').css('color','red');
-                }
-            },
-            error:function(){
-                alert('error')
-        }
-        });
-    });
 
-    //更换验证码
-    function changeCode(obj){
-        $(obj).children("img").attr("src","data/checkCode.php?rt="+new Date().getTime());
-    }
 </script>
 </body>
 </html>
